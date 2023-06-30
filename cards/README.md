@@ -97,3 +97,42 @@
     }
     ```
     The above code output: Harry Potter
+
+15. Golang has support to return multiple values from a function
+    ```
+    package main
+     
+    import "fmt"
+     
+    func main() {
+        color1, color2, color3 := colors()
+     
+        fmt.Println(color1, color2, color3)
+    }
+     
+    func colors() (string, string, string) {
+        return "red", "yellow", "blue"
+    }
+    ```
+    Output: red yelloe blue
+
+16. What will the following program output?
+    ```
+    package main
+     
+    import "fmt"
+     
+    func main() {
+       c := color("Red")
+     
+       fmt.Println(c.describe("is an awesome color"))
+    }
+     
+    type color string
+     
+    func (c color) describe(description string) (string) {
+       return string(c) + " " + description
+    }
+    ```
+    Output: "Red is an awesome color"
+    'describe' is a function with receiver of type 'color' that requires an argument of type 'string', then return a value of type 'string'.
