@@ -146,3 +146,12 @@
 18. Type Conversion in Golang
     1. []byte("Hi there!")
 
+19. Golang Tests
+    1. Create a go.mod file
+    2. To create run following command in project directory ```go mod init cards```
+    3. We can now use the run test function from within VS Code, and/or run the ```go test``` from the terminal.
+
+20. Golang testing is not like RSpec, mocha, jasmine, selenium, etc!
+    1. To make a test, create a new file ending in _test.go
+    2. To run all tests in a package, run the command ```go test```
+
