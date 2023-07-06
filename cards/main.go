@@ -35,6 +35,21 @@ func main() {
 	hand, remainingCards := deal(cards, 5)
 	hand.print()
 	remainingCards.print()
+
+	// convert deck to string
+	// this function will return comma separated deck
+	// defined in deck.go
+	fmt.Println(cards.toString())
+
+	// save cards to file
+	cards.saveToFile("my_cards")
+
+	// load deck from file
+	cards_from_file := newDeckFromFile("my_cards")
+	cards_from_file.print()
+
+	cards.shuffle()
+	cards.print()
 }
 
 func newCard() string {

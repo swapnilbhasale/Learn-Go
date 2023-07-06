@@ -136,3 +136,13 @@
     ```
     Output: "Red is an awesome color"
     'describe' is a function with receiver of type 'color' that requires an argument of type 'string', then return a value of type 'string'.
+
+17. ioutil package
+    1. ```func WriteFile(filename string, data []byte, perm os.FileMode) error```
+    2. ```data []byte``` is a byte slice.
+    3. What is a byte slice? - represents a string in ascii
+    4. string = "Hi there!" => byte slice = [72 105 32 116 104 101 114 101 33]
+
+18. Type Conversion in Golang
+    1. []byte("Hi there!")
+
